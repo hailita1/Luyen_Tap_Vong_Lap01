@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    run()
+
+    function chiahetcho3(num) {
+        if (num % 3 == 0) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+
+    function chiahetcho5(num) {
+        if (num % 5 == 0) {
+            return 1;
+        } else {
+            return 0;
+        }
+
+    }
+
+    function run() {
+        for (let i = 1; i <= 100; i++) {
+            if (chiahetcho3(i) && chiahetcho5(i)) {
+                document.write("fizzbuzz  ");
+            } else if (chiahetcho5(i)) {
+                document.write("buzz  ");
+            } else if (chiahetcho3(i)) {
+                document.write("fizz  ");
+            } else {
+                document.write(i+"  ");
+            }
+                }
+    }
+</script>
+</body>
+</html>
